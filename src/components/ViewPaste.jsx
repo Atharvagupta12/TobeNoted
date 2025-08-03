@@ -22,7 +22,7 @@ const paste = allPastes.filter((p) => p._id === id)[0];
           <button onClick={() => {
                       navigator.clipboard.writeText(paste?.content)
                       toast.success('Content Copied')
-                    }} className="m-2 text-[#646cff]">Copy</button>
+                    }} className="m-2 text-[#646cff] bg-[#1a1a1a] focus:outline-none">Copy</button>
         </div>
       </div>
 

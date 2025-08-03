@@ -47,16 +47,16 @@ const Home = () => {
 
   return (
     <div className='bg-black rounded-2xl mt-4 md:w-[40vw]'>
-      <div className='m-2 p-3 justify-between flex bg-black rounded-2xl place-content-between'>
+      <div className='m-2 p-3 justify-between flex bg-black rounded-2xl place-content-between text-white'>
       <input
-      className='border-none focus:outline-none text-shadow-gray-500'
+      className='border-none focus:outline-none text-white placeholder-gray-400 '
       type='text'
       placeholder='Enter the Title here'
       value={title}
       onChange={(e) => setTitle(e.target.value)}
       />
 
-      <button onClick={createPaste}>
+      <button className='bg-[#1a1a1a] focus:outline-none' onClick={createPaste}>
         {
           pasteId ? "Update My Paste" : "Create My Paste"
         }
@@ -64,8 +64,8 @@ const Home = () => {
 
     </div>
 
-    <div>
-      <textarea className='m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none text-shadow-gray-500'   
+    <div className='text-white'>
+      <textarea className='m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none text-white placeholder-gray-400'   
       value={value}
       placeholder="Enter the Content"
       onChange={(e) => setValue(e.target.value)}
