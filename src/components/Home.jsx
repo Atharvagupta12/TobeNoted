@@ -49,7 +49,7 @@ const Home = () => {
     <div className='bg-black rounded-2xl mt-4 md:w-[40vw]'>
       <div className='m-2 p-3 justify-between flex bg-black rounded-2xl place-content-between'>
       <input
-      className='border-none focus:outline-none'
+      className='border-none focus:outline-none text-shadow-gray-500'
       type='text'
       placeholder='Enter the Title here'
       value={title}
@@ -65,7 +65,7 @@ const Home = () => {
     </div>
 
     <div>
-      <textarea className='m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none'   
+      <textarea className='m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none text-shadow-gray-500'   
       value={value}
       placeholder="Enter the Content"
       onChange={(e) => setValue(e.target.value)}

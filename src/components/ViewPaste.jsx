@@ -11,7 +11,7 @@ const paste = allPastes.filter((p) => p._id === id)[0];
     <div className="bg-black rounded-2xl mt-4 md:w-[40vw]">
       <div className="m-2 p-3 justify-between flex bg-black rounded-2xl place-content-between">
         <input
-          className="border-none focus:outline-none "
+          className="border-none focus:outline-none text-amber-200"
           type="text"
           placeholder="Enter the Title here"
           value={paste.title}
@@ -28,7 +28,7 @@ const paste = allPastes.filter((p) => p._id === id)[0];
 
       <div>
         <textarea
-          className="m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none"
+          className="m-2 p-3 bg-[#000000b7] w-[95%] focus:outline-none text-green-200"
           value={paste.content}
           placeholder="Enter the Content"
           onChange={(e) => setValue(e.target.value)}

@@ -59,7 +59,7 @@ const Pastes = () => {
                     }} className="m-2 text-[#646cff]">Copy</button>
                     <button className="m-2 text-[#646cff]">Share</button>
                   </div>
-                  <div>
+                  <div className="mt-2 text-shadow-gray-500">
                     {paste.createAt}
                   </div>
                   
