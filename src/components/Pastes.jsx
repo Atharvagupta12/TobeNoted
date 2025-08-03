@@ -31,7 +31,7 @@ const Pastes = () => {
       </div>
 
       <div className="text-center mt-10">
-        <h1 className="text-xl font-semibold">All Your Notes</h1>
+        <h1 className="text-xl text-white font-semibold">All Your Notes</h1>
       </div>
 
       <div className="m-2 p-1">
